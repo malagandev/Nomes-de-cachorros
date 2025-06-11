@@ -1,75 +1,80 @@
-#titulo{
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 50px;
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
-background-color: darkorange;
-
+body {
+    background-color: darkorange;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
-border: solid 2px black;
-
+/* Título */
+#titulo {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
 }
 
-.bordertittle{
-border: solid 7px rgb(0, 0, 0);
-padding: 5px;
-
-
-
+.bordertittle {
+    border: solid 7px black;
+    padding: 5px;
 }
 
-#button{
-
-    position: relative;
+/* Imagem responsiva */
+.banner-img {
+    width: 100%;
+    height: auto;
     display: block;
-    left: 36%;
+    border: solid 2px black;
+}
+
+/* Botão centralizado e estilizado */
+.borderbtn {
+    background-color: black;
+    border: solid yellow 5px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#button {
     background-color: rgb(38, 153, 38);
-    padding: 15px;
-    padding-left: 195px;
-    padding-right: 195px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     border: solid rgb(39, 172, 21);
-
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.borderbtn{
-
-background-color: black;
-border: solid yellow 5px;
-margin-top: -3.5;
-
-}
-
-#direita{
-
-font-size: 60px;
-position: absolute;
-  bottom: -58%;
-  left: 20%;
-color: white;
-}
-
-#esquerda{
-font-size: 60px;
-position: absolute;
-bottom: -58%;
-left: 80%;
-
-color: white;
-}
-
-select{
-    width: 150px;
-    height: 150px;
+/* Setas laterais */
+#direita,
+#esquerda {
+    font-size: 60px;
+    color: white;
+    position: fixed;
+    bottom: 20px;
 }
 
 
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    #button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    #direita,
+    #esquerda {
+        font-size: 40px;
+    }
+}
 
