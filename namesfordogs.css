@@ -45,3 +45,18 @@ top: 2cm;
   transform: scale(1.1);
   background-color: #f0f0f0;
 }
+
+#A{
+
+display: block;
+position: relative;
+right: 23%;
+}
+
+
+#formA{
+display: block;
+position: relative;
+bottom: 10%;
+
+}
